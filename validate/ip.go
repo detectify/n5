@@ -7,7 +7,7 @@ func IP(s string) error {
 	return ip.Validate(s)
 }
 
-// IP determines whether a string is a valid, non-reserved IP address
+// NonReservedIP determines whether a string is a valid, non-reserved IP address
 func NonReservedIP(s string) error {
 	return ip.ValidateNonReserved(s)
 }
