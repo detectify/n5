@@ -2,6 +2,7 @@
 Growing collection of network utilities for Go (Golang), such as domain names, IPs and URLs.
 
 ![build](https://github.com/detectify/n5/actions/workflows/go.yml/badge.svg)
+[![Go Report Card](https://goreportcard.com/badge/github.com/detectify/n5)](https://goreportcard.com/report/github.com/detectify/n5)
 
 ## Installation
 To install n5, use `go get`:
