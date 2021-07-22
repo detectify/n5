@@ -1,6 +1,7 @@
 # n5
 Growing collection of network utilities for Go (Golang), such as domain names, IPs and URLs.
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/detectify/n5.svg)](https://pkg.go.dev/github.com/detectify/n5)
 ![build](https://github.com/detectify/n5/actions/workflows/go.yml/badge.svg)
 [![Go Report Card](https://goreportcard.com/badge/github.com/detectify/n5)](https://goreportcard.com/report/github.com/detectify/n5)
 
