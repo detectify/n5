@@ -1,5 +1,5 @@
 # n5
-Utilities library for Go (Golang) for domain names, IPs and URLs.
+Growing collection of network utilities for Go (Golang), such as domain names, IPs and URLs.
 
 ![build](https://github.com/detectify/n5/actions/workflows/go.yml/badge.svg)
 
@@ -30,8 +30,10 @@ func main() {
     fmt.Println("FQDN = " + name.FQDN()) // prints "tld = www.example.com."
     
     name, err = domain.Extract("https://пример.мкд/index.html")
-    fmt.Println("domain (punycoded) = " + name.String()) // prints "domain (punycoded) = xn--e1afmkfd.xn--d1alf"
-    fmt.Println("domain (original) = " + name.Unicode()) // prints "domain (original) = пример.мкд"
+    fmt.Println("domain (punycoded) = " + name.String()) 
+       // prints "domain (punycoded) = xn--e1afmkfd.xn--d1alf"
+    fmt.Println("domain (original) = " + name.Unicode()) 
+       // prints "domain (original) = пример.мкд"
 }
 ```
 
@@ -59,6 +61,9 @@ The `url` package provides functions for validating absolute URLs (`url.IsAbsolu
 
 ### Notes
 - Host extraction aims to support non-standard URL formats for which the [`url.URL`](https://pkg.go.dev/net/url#URL) type returns error.
+
+## Contributing
+Please feel free to submit issues, fork the repository and send pull requests. In addition to fixes, new features are also welcome if you feel they are within the scope of the package. Feel free to reach out and discuss if you have any questions.
 
 ## License
 This project is licensed under the terms of the MIT license.
