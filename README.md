@@ -1,6 +1,8 @@
 # n5
 Utilities library for Go (Golang) for domain names, IPs and URLs.
 
+![build](https://github.com/detectify/n5/actions/workflows/go.yml/badge.svg)
+
 ## Installation
 To install n5, use `go get`:
 
