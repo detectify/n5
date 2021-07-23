@@ -152,7 +152,7 @@ func Contains(first, second string) bool {
 	return firstD.Contains(secondD)
 }
 
-// Contains indicates whether this domain matches another domain or is a parent of another domain
+// IsParentOf indicates whether this domain matches another domain or is a parent of another domain
 //
 // Returns false if either domain names are empty or invalid.
 func IsParentOf(first, second string) bool {
@@ -184,7 +184,7 @@ func IsSubdomainOf(first, second string) bool {
 	return firstD.IsSubdomainOf(secondD)
 }
 
-// IsSubdomainOf indicates whether the first domain is an immediate subdomain of the second domain
+// IsImmediateSubdomainOf indicates whether the first domain is an immediate subdomain of the second domain
 //
 // Returns false if either domain names are empty or invalid.
 func IsImmediateSubdomainOf(first, second string) bool {
