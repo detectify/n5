@@ -19,7 +19,10 @@ type Name struct {
 
 // Apex returns the apex domain part of the domain name
 func (n Name) Apex() Name {
-	if len(n.labels) < 2 {
+	switch len(n.labels) {
+	case 1:
+		return n
+	case 0:
 		// as eTLD or root does not have apex, return root
 		// should not have practical impact
 		return RootDomain
